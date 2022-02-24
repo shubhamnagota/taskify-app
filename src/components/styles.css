@@ -1,0 +1,99 @@
+.input {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+}
+
+.input__box {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px #000;
+}
+
+.input__box:focus {
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+.input__submit {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 15px;
+    margin: 12px;
+    background-color: #037d81;
+    border: none;
+    color: #fff;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px #000;
+}
+
+.input__submit:hover {
+    background-color: #379b9e;
+}
+
+.input__submit:active {
+    box-shadow: 0 0 5px #000;
+    transform: scale(0.8);
+}
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.todos__single {
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background: url("https://image.freepik.com/free-vector/abstract-dark-blue-carbon-fiber-texture-pattern_1017-21350.jpg");
+    color: #fff;
+}
+
+.todos__single-text {
+    flex: 1;
+    font-size: 24px;
+    border: none;
+    padding: 5px;
+}
+
+.todos__single-text:focus {
+    outline: none;
+}
+
+.icon {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .todos__single {
+        width: 100%;
+    }
+
+    .todos {
+        width: 95%;
+    }
+
+    .input {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .todos__single {
+        width: 40%;
+    }
+}
